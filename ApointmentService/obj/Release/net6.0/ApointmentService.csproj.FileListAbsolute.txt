@@ -1,0 +1,14 @@
+D:\APP\TestQWIIK\ApointmentService\bin\Release\net6.0\ApointmentService.deps.json
+D:\APP\TestQWIIK\ApointmentService\bin\Release\net6.0\ApointmentService.runtimeconfig.json
+D:\APP\TestQWIIK\ApointmentService\bin\Release\net6.0\ApointmentService.dll
+D:\APP\TestQWIIK\ApointmentService\bin\Release\net6.0\ApointmentService.pdb
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.csproj.AssemblyReference.cache
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.GeneratedMSBuildEditorConfig.editorconfig
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.AssemblyInfoInputs.cache
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.AssemblyInfo.cs
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.csproj.CoreCompileInputs.cache
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.dll
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\refint\ApointmentService.dll
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.pdb
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ApointmentService.genruntimeconfig.cache
+D:\APP\TestQWIIK\ApointmentService\obj\Release\net6.0\ref\ApointmentService.dll

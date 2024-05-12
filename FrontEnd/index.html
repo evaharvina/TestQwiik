@@ -1,0 +1,64 @@
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+	<style>
+		table, th, td {
+		  border: 1px solid;
+		}
+	</style>
+	<div style="margin-bottom:10px;">
+		<label>Tanggal : </label>
+		<input type="date" id="txtDate" >
+		<button type="button" id="btnCari">Cari</button>
+	</div>
+		<div>
+			<table id="tblApp">
+				<thead>
+				  <tr style="background-color: yellow;">
+					<th>Customer ID</th>
+					<th>Customer Name</th>
+					<th>Appointment Date</th>
+				  </tr>
+				 </thead>
+				<tbody id="tbodyid">
+				</tbody>
+			</table>
+		</div>
+		<script>
+			getData('2024-05-12');
+			$("#txtDate").val('2024-05-12');
+			$("#btnCari").on('click', function() {			
+				getData($("#txtDate").val());
+			});
+			function getData(tgl) {
+				$("#tbodyid").empty();
+				fetch('https://localhost:7171/api/Appointment/AppointmentReport?date='+tgl, {
+				headers: {Authorization: 'Bearer 123'}
+				})
+				  .then(response => {
+					if (!response.ok) {
+					  throw new Error('Network response was not ok');
+					}
+					return response.json();
+				  })
+				  .then(data => {
+					console.log('Data received:', data);
+					var textdata = "";
+					$.each(data , function(index, val) { 
+						textdata += "<tr>"+
+						"<td>"+val.customerId+"</td>"+
+						"<td>"+val.customerName+"</td>"+
+						"<td>"+val.appointmentDate.substr(0, 10)+"</td>"+
+						"</tr>";				  
+					});
+					$("#tblApp").find('tbody').append(textdata);
+				  })
+				  .catch(error => {
+					console.error('There was a problem with the fetch operation:', error);
+				  });
+			  }
+		</script>
+	</body
+</html>
